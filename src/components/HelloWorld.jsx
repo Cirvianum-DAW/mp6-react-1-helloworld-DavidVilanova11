@@ -9,6 +9,6 @@ function HelloWorld() {
     <div className="App">
       <button onClick={handleClick}>React</button>
     </div>
-  );
+  );//
 }
 export default HelloWorld; // Exportem la funció HelloWorld
