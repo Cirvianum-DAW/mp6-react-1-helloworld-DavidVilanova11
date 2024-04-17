@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Form() {
+function Form(props) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [welcomeMessage, setWelcomeMessage] = useState("");
@@ -14,7 +14,7 @@ function Form() {
     <div className="flex justify-center items-center h-screen">
       <form className="w-1/2" onSubmit={handleSubmit}>
         <h1 className="text-3xl font-bold text-center mb-8">
-          Informació Estudiant
+          Detalls d'estudiant: {props.tipusEstudiantSelect}
         </h1>
         <label>Nom:</label>
         <input
